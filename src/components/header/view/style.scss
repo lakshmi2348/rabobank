@@ -1,0 +1,19 @@
+.rabobank-app {
+    &--header {
+      height: 100px;
+      position: sticky;
+  
+      &--logo {
+        width: 70px;
+        height: auto;
+        margin: 20px 10px 0 50px;
+      }
+  
+      &--text {
+        font-size: 21px;
+        font-family: "Myriad SemiBold Italic","Tahoma","Lucida Sans Unicode","Lucida Grande",sans-serif;
+        font-weight: 400;
+        color: #000099;
+      }
+    }
+  }

@@ -1,0 +1,34 @@
+.rabobank-signup {
+    height: 500px;
+    width: 500px;
+    margin: auto;
+
+    &-input {
+        margin-bottom: 20px;
+
+        &--header {
+            padding: 20px 30px 20px 30px;
+            color: #000099;
+        }
+
+        &-text {
+            z-index: 1000;
+        }
+
+        &--submit {
+            padding: 20px;
+            
+            &-button {
+                color: #FFFFFF;
+                background-color: #FF6600;
+                border: none;
+                padding: 10px 15px;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    &--validation-error {
+        color: red;
+    }
+}
