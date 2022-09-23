@@ -7,10 +7,10 @@ function SignUpForm(component) {
   
   return (
     <div className="rabobank-signup" data-testid="rabobank-signup">
-      <h1>Sign Up</h1>
+      <h1 className="rabobank-signup--header">Sign Up</h1>
 
       <form onSubmit={component.handleSubmit}>
-      <table>
+      <table className="rabobank-signup--table">
         <tbody>
           <tr className="rabobank-signup-input">  
             <td className="rabobank-signup-input--header">First Name</td>

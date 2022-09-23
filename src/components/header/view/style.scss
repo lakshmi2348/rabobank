@@ -2,11 +2,13 @@
     &--header {
       height: 100px;
       position: sticky;
+      border: 1px solid #D3D3D3;
+      box-shadow: 0 15px 15px rgba(0, 0, 0, 0.05);
   
       &--logo {
         width: 70px;
         height: auto;
-        margin: 20px 10px 0 50px;
+        margin: 10px 10px 0 50px;
       }
   
       &--text {
@@ -14,6 +16,9 @@
         font-family: "Myriad SemiBold Italic","Tahoma","Lucida Sans Unicode","Lucida Grande",sans-serif;
         font-weight: 400;
         color: #000099;
+        position: absolute;
+        right: 5%;
+        bottom: 0;
       }
     }
   }

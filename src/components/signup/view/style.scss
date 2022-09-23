@@ -1,7 +1,23 @@
 .rabobank-signup {
-    height: 500px;
+    height: 400px;
     width: 500px;
-    margin: auto;
+    margin: 50px auto;
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+
+    &--table {
+        width: 100%;
+    }
+
+    &--header {
+        margin-left: 30px;
+
+        &--text {
+            position: absolute;
+            right: 5%;
+            bottom: 0;
+        }
+    }
 
     &-input {
         margin-bottom: 20px;
