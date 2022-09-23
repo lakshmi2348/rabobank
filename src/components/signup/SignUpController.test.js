@@ -1,11 +1,16 @@
-import React from 'react';
-import { mount } from 'enzyme/build';
+import { render, screen } from "@testing-library/react";
 import SignUpForm from './view/SignUpForm';
-import Adapter from 'enzyme-adapter-react-15';
+import SignUpController from './SignUpController';
 
 describe('Signup Controller testing', () => {
-const controller = mount(<SignUpForm />);
 
-const controllerInstance = controller.instance();
-console.log('controllerInstance', controllerInstance);
+    test('testing controller functions', () => {
+        const controller = new SignUpController();
+        controller.state.user = {};
+        const event = {
+            preventDefault: jest.fn()
+        }
+        controller.handleSubmit(event);
+        expect(controller.state.user).toEqual({});
+    });
 });

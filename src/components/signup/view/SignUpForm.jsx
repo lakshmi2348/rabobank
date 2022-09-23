@@ -2,7 +2,8 @@ import React from "react";
 import "./style.scss";
 
 function SignUpForm(component) {
-  const { user , errors } = component.state;
+  const user = component?.state?.user ? component.state.user : {};
+  const errors = component?.state?.errors ? component?.state?.errors : {};
   
   return (
     <div className="rabobank-signup" data-testid="rabobank-signup">
